@@ -8,16 +8,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/products")
 public class ProductController {
-
-    private final List<Product> products = new ArrayList<>();
 
     @Autowired
     private ProductRepository productRepository;
@@ -55,14 +51,14 @@ public class ProductController {
     @DeleteMapping
     public ResponseEntity<?> delete(@RequestBody Product product) {
 
-        Optional<Product> findProduct = this.productRepository.findById(product.getId());
+        boolean isProductExists = this.productRepository.existsById(product.getId());
 
-        if (findProduct.isPresent()) {
-            this.productRepository.delete(product);
-
-            return ResponseEntity.ok("");
+        if (!isProductExists) {
+            return ResponseEntity.badRequest().body("O produto requisitado não existe no sistema");
         }
 
-        return ResponseEntity.badRequest().body("O produto requisitado não existe no sistema");
+
+        this.productRepository.delete(product);
+        return ResponseEntity.ok("");
     }
 }
