@@ -57,16 +57,22 @@ $ http://localhost:8080/
 <br>
 
 - **<span style="color:green;">Product</span>** <br><br>
-**[GET] /products/:id** - exibe item específico da lista de itens; <br>
-**[GET] /products/list** - lista todos os itens armazenados no sistema; <br>
-**[POST] /products/** - insere um novo produto; <br><br>
+**[GET] /products/:id** - exibe produto específico; <br>
+**[GET] /products/list** - lista todos os produtos com paginação; <br>
+**[POST] /products/** - insere produto; <br><br>
+**[PUT] /products/** - altera produto; <br><br>
+**[DELETE] /products/** - deleta produto; <br><br>
 
 - **<span style="color:green;">SalesOrder</span>** <br><br>
-    **[GET] /products/:id** - exibe item específico da lista de itens; <br>
-    **[GET] /products/list** - lista todos os itens armazenados no sistema; <br>
-    **[POST] /products/** - insere um novo produto; <br><br>
+**[GET] /orders/:id** - exibe pedido específico; <br>
+**[GET] /orders/list** - lista todos os pedidos com paginação; <br>
+**[POST] /orders/** - insere pedido; <br><br>
+**[PUT] /orders/** - altera pedido; <br><br>
+**[DELETE] /orders/** - deleta pedido; <br><br>
 
-- **<span style="color:green;">SalesOrder</span>** <br><br>
-  **[GET] /products/:id** - exibe item específico da lista de itens; <br>
-  **[GET] /products/list** - lista todos os itens armazenados no sistema; <br>
-  **[POST] /products/** - insere um novo produto; <br><br>
+- **<span style="color:green;">SalesItens</span>** <br><br>
+  **[GET] /itens/:id** - exibe item específico; <br>
+  **[GET] /itens/list** - lista todos os itens com paginação; <br>
+  **[POST] /itens/** - insere item; <br><br>
+  **[PUT] /itens/** - altera item; <br><br>
+  **[DELETE] /itens/** - deleta item; <br><br>

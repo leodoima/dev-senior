@@ -10,6 +10,6 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(){
-        return "Bem-vindo ao serividor da aplicação! \uD83D\uDE80";
+        return "Bem-vindo ao servidor da aplicação! \uD83D\uDE80";
     }
 }
