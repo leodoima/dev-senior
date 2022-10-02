@@ -76,3 +76,5 @@ $ http://localhost:8080/
 [POST] **/itens/** - insere item; <br>
 [PUT] **/itens/** - altera item; <br>
 [DELETE] **/itens/** - deleta item; <br><br>
+
+Para testes fora adicionado arquivo .json do Insomnia para execução das rotas acima, no menu Main > Resources > Templates.

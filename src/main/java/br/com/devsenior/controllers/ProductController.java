@@ -57,7 +57,6 @@ public class ProductController {
             return ResponseEntity.badRequest().body("O produto requisitado não existe no sistema");
         }
 
-
         this.productRepository.delete(product);
         return ResponseEntity.ok("");
     }
