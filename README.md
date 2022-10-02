@@ -30,6 +30,7 @@ Os seguintes recursos foram utilizados para construção desta aplicação:
 Antes de iniciar o consumo desta aplicação, faz-se necessário ter instalado em sua máquina o Java em uma versão 8+, o [Maven](https://maven.apache.org/) para download das dependências e também o [PostgreSQL](https://www.postgresql.org/) para armazenamento das informações geradas.
 <br>
 <br>
+<br>
 
 ### Rodando a aplicação 🏈
 
@@ -49,6 +50,7 @@ $ mvn spring-boot:run
 # Caso queira saber se a aplicação está rodando
 $ http://localhost:8080/
 ```
+<br>
 <br>
 
 ### Rotas / Recursos 🔨
