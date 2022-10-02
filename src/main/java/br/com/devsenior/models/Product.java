@@ -2,6 +2,7 @@ package br.com.devsenior.models;
 
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Table
@@ -9,21 +10,16 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
     private String name;
-    private double percentDiscount;
     private ProductType productType;
 
 
     public Product() {
     }
 
-    public Long getId() {
+    public UUID getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -34,14 +30,6 @@ public class Product {
         this.name = name;
     }
 
-    public double getPercentDiscount() {
-        return percentDiscount;
-    }
-
-    public void setPercentDiscount(double percentDiscount) {
-        this.percentDiscount = percentDiscount;
-    }
-
     public ProductType getProductType() {
         return productType;
     }
@@ -50,7 +38,7 @@ public class Product {
         this.productType = productType;
     }
 
-    enum ProductType {
+    public enum ProductType {
         PRODUCT,
         SERVICE
     }
