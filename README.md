@@ -71,8 +71,8 @@ $ http://localhost:8080/
 **[DELETE] /orders/** - deleta pedido; <br><br>
 
 - **<span style="color:green;">SalesItens</span>** <br><br>
-  **[GET] /itens/:id** - exibe item específico; <br>
-  **[GET] /itens/list** - lista todos os itens com paginação; <br>
-  **[POST] /itens/** - insere item; <br><br>
-  **[PUT] /itens/** - altera item; <br><br>
-  **[DELETE] /itens/** - deleta item; <br><br>
+**[GET] /itens/:id** - exibe item específico; <br>
+**[GET] /itens/list** - lista todos os itens com paginação; <br>
+**[POST] /itens/** - insere item; <br><br>
+**[PUT] /itens/** - altera item; <br><br>
+**[DELETE] /itens/** - deleta item; <br><br>
