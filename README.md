@@ -4,7 +4,7 @@ Desafio de desenvolvimento em código **Java**
 <br>
 <br>
 ### Objetivo 🚀
-Criar um ambiente para cadatramento de produtos/serviços, pedidos de vendas e itens para os pedidos de venda.
+Criar um ambiente para cadastramento de produtos/serviços, pedidos de vendas e itens para os pedidos de venda.
 <br>
 <br>
 <br>
@@ -14,6 +14,7 @@ Criar um ambiente para cadatramento de produtos/serviços, pedidos de vendas e i
 - **SalesItem** - itens contidos nos pedidos de vendas
 <br>
 <br>
+
 ### Tecnologias 🔧
 Os seguintes recursos foram utilizados para construção desta aplicação:
 
@@ -24,8 +25,9 @@ Os seguintes recursos foram utilizados para construção desta aplicação:
 - JPA
 <br>
 <br>
+
 ### Pré-requisitos 🗒️
-Antes de iniciar o consumo desta aplicação, faz-se necessário ter instalado em sua máquina o Java em uma versão 8+, ter instalado o [Maven](https://maven.apache.org/) para download das dependências e também o [PostgreSQL](https://www.postgresql.org/).
+Antes de iniciar o consumo desta aplicação, faz-se necessário ter instalado em sua máquina o Java em uma versão 8+, o [Maven](https://maven.apache.org/) para download das dependências e também o [PostgreSQL](https://www.postgresql.org/) para armazenamento das informações geradas.
 <br>
 <br>
 
